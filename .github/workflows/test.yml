@@ -10,7 +10,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '17'
-      - name: Download and Install AirSim - Blocks env
       - run: |
           wget https://github.com/microsoft/AirSim/releases/download/v1.8.0-linux/Blocks.zip
           ls -la /
