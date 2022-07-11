@@ -1,0 +1,13 @@
+name: airsim-js Test
+
+on: [push, pull, workflow_dispatch]
+
+jobs:
+  airsim-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '17'
+      - run:echo 'hello world'
