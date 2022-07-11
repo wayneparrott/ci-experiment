@@ -11,10 +11,10 @@ jobs:
         with:
           node-version: '17'
       - run: |
+          export SDL_VIDEODRIVER_VALUE=offscreen
+          export SDL_HINT_CUDA_DEVICE=0
           wget https://github.com/microsoft/AirSim/releases/download/v1.8.0-linux/Blocks.zip
-          ls -la /
           unzip Blocks.zip
-          # ls -laR Blocks
           Blocks/LinuxNoEditor/Blocks.sh -settings=settings.json
           sleep 10
           ps aux
