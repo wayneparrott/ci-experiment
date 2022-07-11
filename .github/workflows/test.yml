@@ -14,4 +14,10 @@ jobs:
           wget https://github.com/microsoft/AirSim/releases/download/v1.8.0-linux/Blocks.zip
           ls -la /
           unzip Blocks.zip
-          ls -laR Blocks
+          # ls -laR Blocks
+          Blocks/LinuxNoEditor/Blocks.sh -settings=settings.json
+          sleep 10
+          ps aux
+          sleep 10
+
+
