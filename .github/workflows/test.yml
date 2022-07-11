@@ -10,5 +10,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '17'
+      - uses: actions/schmiddim-wget-unzip@v2
+          with:
+            url: 'https://github.com/microsoft/AirSim/releases/download/v1.8.0-windows/Blocks.zip'
+            destination: /airsim
       - run: |
-          echo 'hello world'
+          pwd
+          ls -la /
+          ls -laR /airsim
