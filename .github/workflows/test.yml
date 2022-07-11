@@ -16,8 +16,11 @@ jobs:
           wget https://github.com/microsoft/AirSim/releases/download/v1.8.0-linux/Blocks.zip
           unzip Blocks.zip
           Blocks/LinuxNoEditor/Blocks.sh -settings=settings.json
-          sleep 10
+          echo "sleeping for 30 secs"
+          sleep 30
+          echo "resuming post-sleeping"
           ps aux
-          sleep 10
+          echo "done"
+
 
 
