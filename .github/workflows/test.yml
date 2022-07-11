@@ -1,6 +1,6 @@
 name: airsim-js Test
 
-on: [push, pull-request, workflow_dispatch]
+on: [push, workflow_dispatch]
 
 jobs:
   airsim-test:
